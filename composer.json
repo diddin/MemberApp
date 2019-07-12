@@ -1,0 +1,17 @@
+{
+    "name": "root/untitled",
+    "authors": [
+        {
+            "name": "diddin",
+            "email": "diddin.wipe@gmail.com"
+        }
+    ],
+    "require": {
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : ["app", "tests"]
+        }
+    }
+}

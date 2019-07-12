@@ -1,0 +1,39 @@
+user:
+  -
+    id: 2
+    username: "userkedua"
+    password: "userkedua"
+
+  - id: 3
+    username: "userketiga"
+    password: "userketiga"
+
+  - id: 4
+    username: "userkeempat"
+    password: "userkeempat"
+
+profile:
+  -
+    user_id: 2
+    first_name: "John"
+    last_name: "Doe"
+    email: "example@mail.com"
+    birth: "1992-10-20"
+    occupation: "IT Marketing"
+    last_update: "2019-01-01"
+
+  - user_id: 3
+    first_name: "John"
+    last_name: "Doe"
+    email: "example@mail.com"
+    birth: "1992-10-20"
+    occupation: "IT Marketing"
+    last_update: "2019-01-01"
+
+  - user_id: 4
+    first_name: "John"
+    last_name: "Doe"
+    email: "example@mail.com"
+    birth: "1992-10-20"
+    occupation: "IT Marketing"
+    last_update: "2019-01-01"

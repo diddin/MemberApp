@@ -1,0 +1,8 @@
+
+// The interface of a database connection
+
+interface IDatabase is
+
+    method connect() is
+
+        // return PDO connection

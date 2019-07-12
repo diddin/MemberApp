@@ -1,0 +1,46 @@
+
+
+// The concrete implementation of a database connection, Method
+// of this class request connection to database driver PDO
+
+class Database implements IDatabase is
+
+    // The field for storing the singleton instance should be
+    // declare static
+    private static field conn: Database
+
+
+    // for instance, all database queries of the app go
+    // which can be executed on its instance
+    public method connect() is
+
+        // parse parameter file from another source
+        field param
+
+        // instance PDO driver class
+        pdo = new PDO(param)
+
+        // return pdo driver
+        return pdo
+
+    // The singletons constructor should always be private to
+    // prevent direct construction calls with the `new`
+    // all operator
+    private constructor Database() is
+
+        //some initialization code, such as the actual
+        //connection to the database server
+        //...
+
+    // The static method that controls access to the singleton
+    // instance.
+    public static method get() is
+
+        // Ensure that the instance hasn't yet been
+        // initialized by another thread while this one
+        // has been waiting for the lock's release.
+        if(this.conn === null) then
+            this.conn = new Database()
+        return this.conn
+
+
